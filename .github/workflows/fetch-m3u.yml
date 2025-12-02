@@ -2,43 +2,34 @@ name: Fetch Multiple IPTV M3U Sources
 
 on:
   schedule:
-    - cron: '0 * * * *'   # 每小时抓一次，可按需修改
-  workflow_dispatch:       # 手动触发
+    - cron: '0 * * * *'
+  workflow_dispatch:
 
 jobs:
   fetch-m3u:
     runs-on: ubuntu-latest
     steps:
-      # 1️⃣ Checkout 仓库
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v3
 
-      # 2️⃣ 抓取多源并合并
-      - name: Fetch and merge IPTV sources
+      - name: Fetch IPTV sources
         run: |
           USER_AGENT="Dalvik/2.1.0 (Linux; Android 11; MiBOX)"
           mkdir -p output
           OUTPUT_FILE="output/merged.m3u"
-
-          # 清空旧文件
           echo "#EXTM3U" > $OUTPUT_FILE
 
-          # IPTV 源列表，可自行添加多条
           SOURCES=(
             "http://103.20.240.213/play.php?token=TOKENRAHSIA123"
-            "http://103.20.240.213/play.php?token=ABC123"
-            # 继续添加你的源链接
+            # 添加其它源
           )
 
           for URL in "${SOURCES[@]}"; do
-            echo "Fetching $URL ..."
-            curl -A "$USER_AGENT" -L "$URL" -o temp.m3u || echo "Failed: $URL"
-            # 去掉重复 #EXTM3U 行
+            curl -A "$USER_AGENT" -L "$URL" -o temp.m3u || echo "Failed $URL"
             grep -v "#EXTM3U" temp.m3u >> $OUTPUT_FILE
             rm temp.m3u
           done
 
-      # 3️⃣ 提交并 push（使用 GITHUB_TOKEN，解决 403）
       - name: Commit and Push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
