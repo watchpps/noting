@@ -1,0 +1,37 @@
+name: Fetch IPTV M3U
+
+# 定时抓取，可修改为每小时抓一次
+on:
+  schedule:
+    - cron: '0 * * * *'  # 每小时抓一次
+  workflow_dispatch:     # 手动触发
+
+jobs:
+  fetch-m3u:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout 仓库
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 抓取 M3U 列表
+      - name: Fetch IPTV M3U
+        run: |
+          URL="http://103.20.240.213/play.php?token=TOKENRAHSIA123"
+          USER_AGENT="Dalvik/2.1.0 (Linux; Android 11; MiBOX)"
+          mkdir -p output
+          # 使用 curl 抓取
+          curl -A "$USER_AGENT" -L "$URL" -o output/merged.m3u
+          # 添加 #EXTM3U 头部，如果没有
+          if ! head -n 1 output/merged.m3u | grep -q "#EXTM3U"; then
+            sed -i '1i #EXTM3U' output/merged.m3u
+          fi
+
+      # 提交文件到仓库
+      - name: Commit and Push
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add output/merged.m3u
+          git commit -m "Update merged.m3u [skip ci]" || echo "No changes to commit"
+          git push
