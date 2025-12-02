@@ -1,37 +1,51 @@
-name: Fetch IPTV M3U
+name: Fetch Multiple IPTV M3U Sources
 
-# 定时抓取，可修改为每小时抓一次
 on:
   schedule:
-    - cron: '0 * * * *'  # 每小时抓一次
-  workflow_dispatch:     # 手动触发
+    - cron: '0 * * * *'   # 每小时抓一次
+  workflow_dispatch:       # 手动触发
 
 jobs:
   fetch-m3u:
     runs-on: ubuntu-latest
     steps:
-      # Checkout 仓库
+      # 1️⃣ Checkout 仓库
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # 抓取 M3U 列表
-      - name: Fetch IPTV M3U
+      # 2️⃣ 抓取多源并合并
+      - name: Fetch and merge IPTV sources
         run: |
-          URL="http://103.20.240.213/play.php?token=TOKENRAHSIA123"
           USER_AGENT="Dalvik/2.1.0 (Linux; Android 11; MiBOX)"
           mkdir -p output
-          # 使用 curl 抓取
-          curl -A "$USER_AGENT" -L "$URL" -o output/merged.m3u
-          # 添加 #EXTM3U 头部，如果没有
-          if ! head -n 1 output/merged.m3u | grep -q "#EXTM3U"; then
-            sed -i '1i #EXTM3U' output/merged.m3u
-          fi
+          OUTPUT_FILE="output/merged.m3u"
+          
+          # 清空之前文件
+          echo "#EXTM3U" > $OUTPUT_FILE
 
-      # 提交文件到仓库
+          # IPTV 源列表，可自行添加多条
+          SOURCES=(
+            "http://103.20.240.213/play.php?token=TOKENRAHSIA123"
+            "http://103.20.240.213/play.php?token=ABC123"
+            # 在这里继续添加你剩余的源
+          )
+
+          for URL in "${SOURCES[@]}"; do
+            echo "Fetching $URL ..."
+            # 抓取源内容
+            curl -A "$USER_AGENT" -L "$URL" >> temp.m3u || echo "Failed: $URL"
+            # 去掉重复 #EXTM3U 行
+            grep -v "#EXTM3U" temp.m3u >> $OUTPUT_FILE
+            rm temp.m3u
+          done
+
+      # 3️⃣ 提交并 push
       - name: Commit and Push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "actions@github.com"
           git add output/merged.m3u
           git commit -m "Update merged.m3u [skip ci]" || echo "No changes to commit"
-          git push
+          git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} HEAD:main
