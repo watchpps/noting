@@ -2,8 +2,8 @@ name: Fetch Multiple IPTV M3U Sources
 
 on:
   schedule:
-    - cron: '0 * * * *'   # 每小时抓一次，可修改
-  workflow_dispatch:       # 允许手动触发
+    - cron: '0 * * * *'   # 每小时抓一次，可按需修改
+  workflow_dispatch:       # 手动触发
 
 jobs:
   fetch-m3u:
@@ -38,7 +38,7 @@ jobs:
             rm temp.m3u
           done
 
-      # 3️⃣ 提交并 push
+      # 3️⃣ 提交并 push（使用 GITHUB_TOKEN，解决 403）
       - name: Commit and Push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
