@@ -20,7 +20,7 @@ jobs:
           echo "#EXTM3U" > $OUTPUT_FILE
 
           SOURCES=(
-            "http://103.20.240.213/play.php?token=TOKENRAHSIA123"
+            "https://gz360.tv/videoDetail/110786"
             # 添加其它源
           )
 
