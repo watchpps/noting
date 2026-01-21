@@ -1,14 +1,29 @@
 #EXTM3U
 
-#EXTINF:-1 tvg-id="815.astro" ch-number="815" group-title="Sports" tvg-logo="https://linear-poster.astro.com.my/prod/logo/AstroBadminton_2024.png",815 Astro Badminton (B)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 5.1; 9cJTLAZe Build/XqMKQM; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.136 Safari/537.36
-#EXTVLCOPT:http-referrer=https://p.go-ott.xyz/
-#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_key=https://p.go-ott.xyz/license|R{SSM}|Content-Type=application/octet-stream&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=user-agent=Mozilla/5.0 (Linux; Android 5.1; 9cJTLAZe Build/XqMKQM; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.136 Safari/537.36&referer=https://p.go-ott.xyz/&origin=https://p.go-ott.xyz&x-api-key=x2Sz1z&connection=keep-alive
-#KODIPROP:inputstream.adaptive.manifest_update_parameter=full
-#KODIPROP:inputstream.adaptive.max_initial_bitrate=1000000
-#EXTVLCOPT:network-caching=1500
-#EXTVLCOPT:http-reconnect=true
+#EXTINF:-1 tvg-id="815.astro",815 Astro Badminton (B)
+#KODIPROP:inputstream.adaptive.stream_headers=user-agent=Mozilla/5.0&x-api-key=x2Sz1z&connection=keep-alive
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:network-caching=3000  # 增加缓存减少请求
 #EXTVLCOPT:program=1
-https://p.go-ott.xyz/aotg/token?c_id=815&uuid=ef791ba3-beab-440f-8091-7da6197a9e80&server=ABGOTT&_t=${random.uuid}
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#EXTVLCOPT:no-video-aspect-ratio
+https://p.go-ott.xyz/aotg/token?c_id=815&uuid=ef791ba3-beab-440f-8091-7da6197a9e80&server=ABGOTT
+
+#EXTINF:-1 tvg-id="815.astro",815 Astro Badminton (B1)
+#KODIPROP:inputstream.adaptive.stream_headers=user-agent=Mozilla/5.0 (Linux; Android 11; SM-A515F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.120 Mobile Safari/537.36&x-api-key=x2Sz1z&X-Requested-With=XMLHttpRequest&Accept=*/*&Accept-Language=en-US,en;q=0.9&Accept-Encoding=gzip, deflate, br&Cache-Control=no-cache&Pragma=no-cache&sec-ch-ua=" Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"&sec-ch-ua-mobile=?1&sec-ch-ua-platform="Android"
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 11; SM-A515F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.120 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://astrogo.astro.com.my/
+#EXTVLCOPT:network-caching=2500
+#EXTVLCOPT:program=31556926
+https://p.go-ott.xyz/aotg/token?c_id=815&uuid=ef791ba3-beab-440f-8091-7da6197a9e80&server=ABGOTT&timestamp=${date:yyyyMMddHHmmss}&format=m3u8&quality=hd
+
+
+#EXTINF:-1,815 Astro Badminton (主源)
+https://p.go-ott.xyz/aotg/token?c_id=815&uuid=UUID1
+
+#EXTINF:-1,815 Astro Badminton (备用源1)
+https://p.go-ott.xyz/api/stream/815
+
+#EXTINF:-1,815 Astro Badminton (备用源2)
+https://backup.go-ott.xyz/aotg/token?c_id=815
