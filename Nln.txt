@@ -1,85 +1,88 @@
 #EXTM3U
+#PLAYLIST:体育频道合集
+#GENERATED-BY:DeepSeek Assistant
+#UPDATED:2025-01-21
 
+# 体育频道组
+#EXTGRP:SPORTS
+
+# EXTVLCOPT 全局设置
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0
-#EXTINF:-1 tvg-id="" tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/235_144.png" group-title="SPORTS",ASTRO ARENA
+#EXTVLCOPT:http-referrer=https://player.example.com/
+#EXTVLCOPT:network-caching=1000
+
+# ASTRO 体育频道系列
+#EXTINF:-1 tvg-id="AstroArena.my" tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/235_144.png" group-title="SPORTS",ASTRO ARENA
 http://iptvpro.pw:35451//live/加QQ群1078393318领福利/66661111/690.ts
-https://mimipipi22.github.io/logo/offline.m3u8
+# https://mimipipi22.github.io/logo/offline.m3u8
 
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0
-#EXTINF:-1 tvg-id="" tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/457_144.png" group-title="SPORTS",ASTRO ARENA 2
+#EXTINF:-1 tvg-id="AstroArena2.my" tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/457_144.png" group-title="SPORTS",ASTRO ARENA 2
 http://iptvpro.pw:35451//live/加QQ群1078393318领福利/66661111/691.ts
-https://mimipipi22.github.io/logo/offline.m3u8
+# https://mimipipi22.github.io/logo/offline.m3u8
 
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0
-#EXTINF:-1 tvg-id="" tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/486_144.png" group-title="SPORTS",BOLA ARENA 1
+#EXTINF:-1 tvg-id="BolaArena1.my" tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/486_144.png" group-title="SPORTS",BOLA ARENA 1
 http://iptvpro.pw:35451//live/加QQ群1078393318领福利/66661111/692.ts
-https://mimipipi22.github.io/logo/offline.m3u8
+# https://mimipipi22.github.io/logo/offline.m3u8
 
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0
-#EXTINF:-1 tvg-id="" tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/487_144.png" group-title="SPORTS",BOLA ARENA 2
+#EXTINF:-1 tvg-id="BolaArena2.my" tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/487_144.png" group-title="SPORTS",BOLA ARENA 2
 http://iptvpro.pw:35451//live/加QQ群1078393318领福利/66661111/693.ts
-https://mimipipi22.github.io/logo/offline.m3u8
+# https://mimipipi22.github.io/logo/offline.m3u8
 
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0
-#EXTINF:-1 tvg-id="" tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/536_144.png" group-title="SPORTS",ASTRO PREMIER LEAGUE
+#EXTINF:-1 tvg-id="AstroPremierLeague.my" tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/536_144.png" group-title="SPORTS",ASTRO PREMIER LEAGUE
 http://iptvpro.pw:35451//live/加QQ群1078393318领福利/66661111/694.ts
-https://mimipipi22.github.io/logo/offline.m3u8
+# https://mimipipi22.github.io/logo/offline.m3u8
 
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0
-#EXTINF:-1 tvg-id="" tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/537_144.png" group-title="SPORTS",ASTRO PREMIER LEAGUE 2
+#EXTINF:-1 tvg-id="AstroPremierLeague2.my" tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/537_144.png" group-title="SPORTS",ASTRO PREMIER LEAGUE 2
 http://iptvpro.pw:35451//live/加QQ群1078393318领福利/66661111/695.ts
-https://mimipipi22.github.io/logo/offline.m3u8
+# https://mimipipi22.github.io/logo/offline.m3u8
 
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0
-#EXTINF:-1 tvg-id="" tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/543_144.png" group-title="SPORTS",ASTRO GRANDSTAND
+#EXTINF:-1 tvg-id="AstroGrandstand.my" tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/543_144.png" group-title="SPORTS",ASTRO GRANDSTAND
 http://iptvpro.pw:35451//live/加QQ群1078393318领福利/66661111/687.ts
-https://mimipipi22.github.io/logo/offline.m3u8
+# https://mimipipi22.github.io/logo/offline.m3u8
 
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0
-#EXTINF:-1 tvg-id="" tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/539_144.png" group-title="SPORTS",ASTRO FOOTBALL
+#EXTINF:-1 tvg-id="AstroFootball.my" tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/539_144.png" group-title="SPORTS",ASTRO FOOTBALL
 http://iptvpro.pw:35451//live/加QQ群1078393318领福利/66661111/689.ts
-https://mimipipi22.github.io/logo/offline.m3u8
+# https://mimipipi22.github.io/logo/offline.m3u8
 
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0
-#EXTINF:-1 tvg-id="" tvg-logo="https://logo.catvod.com/Astro Sports Plus.png" group-title="SPORTS",ASTRO SPORTSPLUS
+#EXTINF:-1 tvg-id="AstroSportsPlus.my" tvg-logo="https://logo.catvod.com/Astro Sports Plus.png" group-title="SPORTS",ASTRO SPORTSPLUS
 http://iptvpro.pw:35451//live/加QQ群1078393318领福利/66661111/686.ts
-https://mimipipi22.github.io/logo/offline.m3u8
+# https://mimipipi22.github.io/logo/offline.m3u8
 
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0
-#EXTINF:-1 tvg-id="" tvg-logo="https://logo.catvod.com/Astro Badminton 1.png" group-title="SPORTS",ASTRO BADMINTON 1
+#EXTINF:-1 tvg-id="AstroBadminton1.my" tvg-logo="https://logo.catvod.com/Astro Badminton 1.png" group-title="SPORTS",ASTRO BADMINTON 1
 http://iptvpro.pw:35451//live/加QQ群1078393318领福利/66661111/688.ts
-https://mimipipi22.github.io/logo/offline.m3u8
+# https://mimipipi22.github.io/logo/offline.m3u8
 
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0
-#EXTINF:-1 tvg-id="" tvg-logo="https://logo.catvod.com/Astro Badminton 2.png" group-title="SPORTS",ASTRO BADMINTON 2
-https://mimipipi22.github.io/logo/offline.m3u8
+#EXTINF:-1 tvg-id="AstroBadminton2.my" tvg-logo="https://logo.catvod.com/Astro Badminton 2.png" group-title="SPORTS",ASTRO BADMINTON 2
+# https://mimipipi22.github.io/logo/offline.m3u8
 
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0
-#EXTINF:-1 tvg-id="" tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/197_144.png" group-title="SPORTS",ASTRO CRICKET
+#EXTINF:-1 tvg-id="AstroCricket.my" tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/197_144.png" group-title="SPORTS",ASTRO CRICKET
 http://iptvpro.pw:35451//live/加QQ群1078393318领福利/66661111/703.ts
-https://mimipipi22.github.io/logo/offline.m3u8
+# https://mimipipi22.github.io/logo/offline.m3u8
 
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0
-#EXTINF:-1 tvg-id="" tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/189_144.png" group-title="SPORTS",ASTRO GOLF
+#EXTINF:-1 tvg-id="AstroGolf.my" tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/189_144.png" group-title="SPORTS",ASTRO GOLF
 https://live.catvod.com/live.php?id=Agolf
-https://mimipipi22.github.io/logo/offline.m3u8
+# https://mimipipi22.github.io/logo/offline.m3u8
 
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0
-#EXTINF:-1 tvg-id="" tvg-logo="https://mimipipi22.github.io/logo/png/cctv5.png" group-title="SPORTS",CCTV5
+# CCTV 体育频道系列
+#EXTINF:-1 tvg-id="CCTV5.cn" tvg-logo="https://mimipipi22.github.io/logo/png/cctv5.png" group-title="SPORTS",CCTV5
 http://38.75.136.137:98/gslb/dsdqbv/cctv5hd.m3u8?auth=test20251009
 http://38.75.136.137:98/gslb/dsdqpub/cctv5hd.m3u8?auth=testpub
 http://69.30.245.50/live/cctv5.m3u8
 http://iptv.huuc.edu.cn/hls/cctv5hd.m3u8
 
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0
-#EXTINF:-1 tvg-id="" tvg-logo="https://mimipipi22.github.io/logo/png/cctv5%2B.png" group-title="SPORTS",CCTV5+
+#EXTINF:-1 tvg-id="CCTV5Plus.cn" tvg-logo="https://mimipipi22.github.io/logo/png/cctv5%2B.png" group-title="SPORTS",CCTV5+
 http://38.75.136.137:98/gslb/dsdqpub/cctv5p.m3u8?auth=testpub
 http://69.30.246.194/live/cctv5p.m3u8
 http://103.109.20.169:10196/migu720p.php?id=641886773
 
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0
-#EXTINF:-1 tvg-id="" tvg-logo="https://piceltaott-elta.cdn.hinet.net/upload/channel/101_a4004c6c910cbec6345fa2015981ebd7.png" group-title="SPORTS",ELTA SPORT 1
+# 其他体育频道
+#EXTINF:-1 tvg-id="EltaSport1.tw" tvg-logo="https://piceltaott-elta.cdn.hinet.net/upload/channel/101_a4004c6c910cbec6345fa2015981ebd7.png" group-title="SPORTS",ELTA SPORT 1
 http://iptvpro.pw:35451//live/加QQ群1078393318领福利/66661111/253.ts
-https://mimipipi22.github.io/logo/offline.m3u8
+# https://mimipipi22.github.io/logo/offline.m3u8
 
+# 备用频道（可选添加）
+#EXTINF:-1 tvg-id="备用1" tvg-logo="https://via.placeholder.com/100x50.png?text=备用" group-title="SPORTS",备用体育频道1
+# https://example-backup1.com/live/sports.m3u8
 
+#EXTINF:-1 tvg-id="备用2" tvg-logo="https://via.placeholder.com/100x50.png?text=备用" group-title="SPORTS",备用体育频道2
+# https://example-backup2.com/live/sports.m3u8
